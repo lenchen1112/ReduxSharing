@@ -1,7 +1,12 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: {
+    entry: [
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        './src/index.js'
+    ],
+    module: {
         loaders: [{
             test: /\.jsx?$/,
             exclude: /node_modules/,
@@ -9,11 +14,11 @@ module.exports = {
         }]
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['', '.js', '.jsx']
     },
     output: {
         path: __dirname + '/dist',
-        publishPath: '/',
+        publicPath: '/',
         filename: 'bundle.js'
     },
     devServer: {
