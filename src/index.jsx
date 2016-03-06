@@ -7,7 +7,8 @@ import SlideWrapper from './SlideWrapper';
 import reducer from './reducer';
 
 const initialState = Map({
-    slideIndex: 0
+    slideIndex: 0,
+    totalPageCount: 2
 });
 const store = createStore(reducer, initialState);
 
