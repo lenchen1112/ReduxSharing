@@ -2,7 +2,6 @@
   "name": "redux-sharing",
   "version": "1.0.0",
   "description": "The sharing demo site which is implemented by redux",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore --cache --ext .js,.jsx . --fix",
     "test": "mocha --compilers js:babel-register --require ./test/testHelper.js 'test/**/*.@(js|jsx)'"

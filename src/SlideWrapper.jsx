@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import eventListener from 'fbjs/lib/EventListener';
+import * as actionCreators from './actionCreators';
 import Slide1 from './slides/Slide1';
 import Slide2 from './slides/Slide2';
 
@@ -10,7 +11,7 @@ function mapStateToProps (state) {
     };
 }
 
-class Slide extends React.Component {
+class SlideWrapper extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -24,13 +25,13 @@ class Slide extends React.Component {
                 case 39: // right arrow
                 case 40: // down arrow
                 case 78: // n
-                    console.log('NEXT');
+                    this.props.jumpToNextPage();
                     return;
                 case 33: // page up
                 case 37: // left arrow
                 case 38: // up arrow
                 case 80: // p
-                    console.log('PREVIOUS');
+                    this.props.jumpToPreviousPage();
                     return;
             }
         });
@@ -46,10 +47,8 @@ class Slide extends React.Component {
                 return <Slide1 />;
             case 1:
                 return <Slide2 />;
-            default:
-                return <div>Default view</div>;
         }
     }
 }
 
-export default connect(mapStateToProps)(Slide);
+export default connect(mapStateToProps, actionCreators)(SlideWrapper);

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import {Map} from 'immutable';
-import Slide from './Slide';
+import SlideWrapper from './SlideWrapper';
 import reducer from './reducer';
 
 const initialState = Map({
@@ -14,7 +14,7 @@ const store = createStore(reducer, initialState);
 ReactDOM.render(
     <Provider store={store}>
         <div>
-            <Slide />
+            <SlideWrapper />
         </div>
     </Provider>,
     document.getElementById('app')
