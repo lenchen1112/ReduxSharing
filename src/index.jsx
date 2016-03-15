@@ -8,7 +8,7 @@ import reducer from './reducer';
 
 const initialState = Map({
     slideIndex: 0,
-    totalPageCount: 2
+    totalPageCount: 10
 });
 const store = createStore(reducer, initialState);
 
