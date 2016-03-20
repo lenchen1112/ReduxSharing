@@ -70,4 +70,38 @@ describe ('reducer', () => {
             totalPageCount: 20
         }));
     });
+
+    it ('should jump to the last page', () => {
+        const initialState = Map({
+            slideIndex: 10,
+            totalPageCount: 20
+        });
+        const action = {
+            type: 'JUMP_TO_LAST_PAGE'
+        };
+
+        const newState = reducer(initialState, action);
+
+        expect(newState).to.equal(Map({
+            slideIndex: 19,
+            totalPageCount: 20
+        }));
+    });
+
+    it ('should jump to the initial page', () => {
+        const initialState = Map({
+            slideIndex: 10,
+            totalPageCount: 20
+        });
+        const action = {
+            type: 'JUMP_TO_INITIAL_PAGE'
+        };
+
+        const newState = reducer(initialState, action);
+
+        expect(newState).to.equal(Map({
+            slideIndex: 0,
+            totalPageCount: 20
+        }));
+    });
 });

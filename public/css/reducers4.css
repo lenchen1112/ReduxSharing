@@ -1,0 +1,24 @@
+.reducers4-title {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    font-size: 50px;
+}
+.reducers4-code1 {
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    height: 400px;
+}
+.reducers4-code2 {
+    position: absolute;
+    top: 500px;
+    left: 850px;
+    height: 150px;
+}
+.reducers4-combined-code {
+    position: absolute;
+    top: 450px;
+    left: 280px;
+    height: 200px;
+}

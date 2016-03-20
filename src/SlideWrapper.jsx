@@ -2,16 +2,25 @@ import React from 'react';
 import {connect} from 'react-redux';
 import eventListener from 'fbjs/lib/EventListener';
 import * as actionCreators from './actionCreators';
-import Slide1 from './slides/Slide1';
-import Slide2 from './slides/Slide2';
-import Slide3 from './slides/Slide3';
-import Slide4 from './slides/Slide4';
-import Slide5 from './slides/Slide5';
-import Slide6 from './slides/Slide6';
-import Slide7 from './slides/Slide7';
-import Slide8 from './slides/Slide8';
-import Slide9 from './slides/Slide9';
-import Slide10 from './slides/Slide10';
+import Cover from './slides/Cover';
+import Outline from './slides/Outline';
+import ReduxComeFrom from './slides/ReduxComeFrom';
+import Motivation1 from './slides/Motivation1';
+import Motivation2 from './slides/Motivation2';
+import Motivation3 from './slides/Motivation3';
+import CompareFlow from './slides/CompareFlow';
+import ThreePrinciples1 from './slides/ThreePrinciples1';
+import ThreePrinciples2 from './slides/ThreePrinciples2';
+import ThreePrinciples3 from './slides/ThreePrinciples3';
+import Actions from './slides/Actions';
+import ActionCreators from './slides/ActionCreators';
+import Reducers1 from './slides/Reducers1';
+import Reducers2 from './slides/Reducers2';
+import Reducers3 from './slides/Reducers3';
+import Reducers4 from './slides/Reducers4';
+import Store from './slides/Store';
+import DataFlow from './slides/DataFlow';
+import ThatIsIt from './slides/ThatIsIt';
 
 function mapStateToProps (state) {
     return {
@@ -41,6 +50,12 @@ class SlideWrapper extends React.Component {
                 case 80: // p
                     this.props.jumpToPreviousPage();
                     return;
+                case 35: // end
+                    this.props.jumpToLastPage();
+                    return;
+                case 36: // home
+                    this.props.jumpToInitialPage();
+                    return;
             }
         });
     }
@@ -52,25 +67,43 @@ class SlideWrapper extends React.Component {
     render() {
         switch (this.props.slideIndex) {
             case 0:
-                return <Slide1 />;
+                return <Cover />;
             case 1:
-                return <Slide2 />;
+                return <Outline />;
             case 2:
-                return <Slide3 />;
+                return <ReduxComeFrom />;
             case 3:
-                return <Slide4 />;
+                return <Motivation1 />;
             case 4:
-                return <Slide5 />;
+                return <Motivation2 />;
             case 5:
-                return <Slide6 />;
+                return <Motivation3 />;
             case 6:
-                return <Slide7 />;
+                return <CompareFlow />;
             case 7:
-                return <Slide8 />;
+                return <ThreePrinciples1 />;
             case 8:
-                return <Slide9 />;
+                return <ThreePrinciples2 />;
             case 9:
-                return <Slide10 />;
+                return <ThreePrinciples3 />;
+            case 10:
+                return <Actions />;
+            case 11:
+                return <ActionCreators />;
+            case 12:
+                return <Reducers1 />;
+            case 13:
+                return <Reducers2 />;
+            case 14:
+                return <Reducers3 />;
+            case 15:
+                return <Reducers4 />;
+            case 16:
+                return <Store />;
+            case 17:
+                return <DataFlow />;
+            case 18:
+                return <ThatIsIt />;
         }
     }
 }

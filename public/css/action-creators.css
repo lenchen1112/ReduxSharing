@@ -1,0 +1,18 @@
+.action-creators-title {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    font-size: 50px;
+}
+.action-creators-redux-style-code {
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    height: 200px;
+}
+.action-creators-flux-style-code {
+    position: absolute;
+    top: 200px;
+    left: 580px;
+    height: 200px;
+}

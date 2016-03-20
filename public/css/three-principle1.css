@@ -1,0 +1,12 @@
+.three-principle1-title {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    font-size: 50px;
+}
+.three-principle1-code {
+    position: absolute;
+    top: 150px;
+    left: 340px;
+    height: 400px;
+}
