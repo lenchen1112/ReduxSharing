@@ -1,0 +1,12 @@
+.map-state-to-props-title {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    font-size: 50px;
+}
+.map-state-to-props-code {
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    height: 140px;
+}

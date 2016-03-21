@@ -16,7 +16,15 @@
 @import url('css/reducers4.css');
 @import url('css/store.css');
 @import url('css/data-flow.css');
-@import url('css/that-is-it.css');
+@import url('css/that-is-all.css');
+@import url('css/bindings.css');
+@import url('css/component-types.css');
+@import url('css/provider.css');
+@import url('css/connect.css');
+@import url('css/map-state-to-props.css');
+@import url('css/map-dispatch-to-props.css');
+@import url('css/connect-to-presentational-component.css');
+@import url('css/demo.css');
 
 /* common */
 .slide-page {

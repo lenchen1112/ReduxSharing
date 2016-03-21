@@ -20,7 +20,15 @@ import Reducers3 from './slides/Reducers3';
 import Reducers4 from './slides/Reducers4';
 import Store from './slides/Store';
 import DataFlow from './slides/DataFlow';
-import ThatIsIt from './slides/ThatIsIt';
+import ThatIsAll from './slides/ThatIsAll';
+import Bindings from './slides/Bindings';
+import ComponentTypes from './slides/ComponentTypes';
+import Provider from './slides/Provider';
+import Connect from './slides/Connect';
+import MapStateToProps from './slides/MapStateToProps';
+import MapDispatchToProps from './slides/MapDispatchToProps';
+import ConnectToPresentationalComponent from './slides/ConnectToPresentationalComponent';
+import Demo from './slides/Demo';
 
 function mapStateToProps (state) {
     return {
@@ -103,7 +111,25 @@ class SlideWrapper extends React.Component {
             case 17:
                 return <DataFlow />;
             case 18:
-                return <ThatIsIt />;
+                return <ThatIsAll />;
+            case 19:
+                return <Bindings />;
+            case 20:
+                return <ComponentTypes />;
+            case 21:
+                return <Provider />;
+            case 22:
+                return <Connect />;
+            case 23:
+                return <MapStateToProps />;
+            case 24:
+                return <MapDispatchToProps />;
+            case 25:
+                return <ConnectToPresentationalComponent />;
+            case 26:
+                return <ThatIsAll />;
+            case 27:
+                return <Demo />;
         }
     }
 }

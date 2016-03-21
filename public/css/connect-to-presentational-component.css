@@ -1,0 +1,12 @@
+.connect-to-presentational-component-title {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    font-size: 50px;
+}
+.connect-to-presentational-component-code {
+    position: absolute;
+    top: 190px;
+    left: 470px;
+    height: 530px;
+}

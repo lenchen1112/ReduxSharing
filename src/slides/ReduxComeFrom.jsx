@@ -3,10 +3,10 @@ import React from 'react';
 export default () => (
     <div className="slide-page">
         <span className="redux-come-from-redux">
-            <span style={{color: "#FF7744"}}>Red</span><span style={{color: "#33CCFF"}}>ux</span>
+            <span className="redux-come-from-redux-color">Red</span><span className="redux-come-from-flux-color">ux</span>
         </span>
         <span className="redux-come-from-redux-plus-flux">
-            = <span style={{color: "#FF7744"}}>Reduce</span> + <span style={{color: "#33CCFF"}}>Flux</span>
+            = <span className="redux-come-from-redux-color">Reduce</span> + <span className="redux-come-from-flux-color">Flux</span>
         </span>
     </div>
 );

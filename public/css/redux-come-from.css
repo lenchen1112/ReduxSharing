@@ -10,3 +10,9 @@
     left: 360px;
     font-size: 80px;
 }
+.redux-come-from-redux-color {
+    color: #FF7744;
+}
+.redux-come-from-flux-color {
+    color: #5599FF;
+}
