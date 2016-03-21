@@ -10,7 +10,11 @@ const initialState = Map({
     slideIndex: 0,
     totalPageCount: 28
 });
-const store = createStore(reducer, initialState);
+const store = createStore(
+	reducer,
+	initialState,
+	window.devToolsExtension ? window.devToolsExtension() : undefined
+);
 
 ReactDOM.render(
     <Provider store={store}>
